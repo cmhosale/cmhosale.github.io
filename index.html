@@ -11,6 +11,45 @@ body {
     background-color: PowderBlue;
 }
 
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: Black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 </style>
 </head>
 <body>
@@ -24,6 +63,14 @@ body {
 <br>
 <br>
 <br>
-<p>&ensp;<a href="lk_rh/lk_rh.html"><img src="tape.gif" alt="lets go" style="width:213px;height:159px;"></a></p>
+<p>&ensp;
+  <a href="lk_rh/lk_rh.html">
+  <div class="container">
+    <img src="tape.gif" alt="lets go" class="image">
+  <div class="overlay">
+    <div class="text">NO.OK</div>
+  </div>
+</div>
+</a>
 </body>
 </html>
