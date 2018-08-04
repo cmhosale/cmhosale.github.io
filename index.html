@@ -1,76 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>for friends</title>
-<style>
-i {
-    font-style: italic;
-}
-body {
-    background-color: PowderBlue;
-}
+  <meta charset="utf-8">
+  <title>for friends</title>
+  <style>
+    i {
+      font-style: italic;
+    }
+    body {
+      background-color: PowderBlue;
+      margin: 0px;
+      padding: 15px;
+      font-family: "Times New Roman", sans-serif;
+      font-size: 100%;
+    }
 
-.container {
-  position: relative;
-  width: 50%;
-}
+    .header {
+      font-size: 110%;
+      margin-bottom: 1em;
+    }
 
-.image {
-  display: block;
-  width: 50%;
-  height: auto;
-}
+    .list {
+      border-top-style: dashed;
+      border-top-width: .1em;
+      border-bottom-style: dashed;
+      border-bottom-width: .1em;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+      margin-right: 40%;
+      max-width: 350px;
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: Black;
-}
+    }
 
-.container:hover .overlay {
-  opacity: 1;
-}
+    .playlist {
+      font-style: italic;
+      font-size: 105%;
+    }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
+    .container {
+      position: relative;
+      max-width: 400px;
+      min-width: 250px;
+      width: 40%;
+      margin-top: 5em;
+      margin-left: 1em;
+    }
 
-</style>
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 5s ease;
+      background-color: Black;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+  </style>
 </head>
 <body>
-
-<i>for friends</i>
-<p>----------------</p>
-<p><a href="summer18/summer18.html">summer '18</a></p>
-<p><a href="summer18_another/summer18_another.html">another summer '18</a></p>
-<p>------------------</p>
-<br>
-<br>
-<br>
-<br>
-<p>&ensp;
-  <a href="lk_rh/lk_rh.html">
-  <div class="container">
-    <img src="tape.gif" alt="lets go" class="image">
-  <div class="overlay">
-    <div class="text">NO.OK</div>
+  <div class="header">
+    <i>for friends</i>
   </div>
-</div>
-</a>
+  <div class="list">
+      <p><a class="playlist" href="summer18/summer18.html">summer '18</a></p>
+      <p><a class="playlist" href="summer18_another/summer18_another.html">another summer '18</a></p>
+  </div>
+    <div class="container">
+      <a href="lk_rh/lk_rh.html">
+      <img src="tape.gif" alt="lets go" class="image">
+    <div class="overlay">
+      <div class="text">NO.OK
+      </div>
+    </div>
+    <a href="lk_rh/lk_rh.html">
+    </div>
 </body>
 </html>
