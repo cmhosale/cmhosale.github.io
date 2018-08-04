@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>everything in its right place</title>
+  <title>everything in its right place</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
 <style>
-i {
+  i {
     font-style: italic;
-}
-body {
+  }
+  body {
     background-color: Black;
-}
+    font-family: "Times New Roman", sans-serif;
+    font-size: 100%;
+    background-image: url(IMG_5176.PNG);
+  }
+
+  .center {
+    display: block;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+  }
+
+  .spotify iframe {
+    width: 100%;
+    max-width: 300px;
+    min-width: 150px;
+    height: 1250px;
+  }
+
+  .link {
+    margin-top: .6em;
+  }
 
 </style>
 </head>
-<body>
-
-<p><img src="IMG_5176.PNG" alt="kidA" style="width:240px;height:320px;"></p>
-
-<iframe src="https://open.spotify.com/embed?uri=spotify:user:cmhosale:playlist:01ItoHbM1L7kyL6mXk5mEk" width="300" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-<p></p>
-
-<a href="../index.html"> g o  a w a y. </a>
-
+  <body>
+    <div class="center">
+      <div class="spotify">
+        <iframe src="https://open.spotify.com/embed?uri=spotify:user:cmhosale:playlist:01ItoHbM1L7kyL6mXk5mEk" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="link">
+        <a href="../index.html"> g o  a w a y. </a>
+      </div>
+    </div>
 </body>
 </html>
